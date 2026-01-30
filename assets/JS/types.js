@@ -112,7 +112,20 @@ var imunidade2 = [];
 
 $(document).ready(function () {
 
+    $("#def").hide();
+    $("#atk").hide();
+
     $("#input").click(function () {
+
+        vantagem = [];
+        desvantagem = [];
+        imunidade = [];
+        vantagem2 = [];
+        desvantagem2 = [];
+        imunidade2 = [];
+
+        $("#def").show();
+        $("#atk").show();
 
         attack();
         defend();
@@ -162,9 +175,9 @@ function defend() {
             if (vantagemTotal[i] == vantagemTotal[j] && i != j) {
                 vantagemTotal.splice(j, 1);
                 if($("#type1").val()!=$("#type2").val()){
-                    $("#vantagens2").append("<div class = \"border rounded p-1\">" + vantagemTotal[i] + "2x </div>");
+                    $("#vantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+vantagemTotal[i]+".png' >" + vantagemTotal[i] + " 2x </div>");
                 }else{
-                    $("#vantagens2").append("<div class = \"border rounded p-1\">" + vantagemTotal[i] + " </div>");
+                    $("#vantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+vantagemTotal[i]+".png' >" + vantagemTotal[i] + " </div>");
                 }
                 skip = true;
             }
@@ -182,7 +195,7 @@ function defend() {
         }
 
         if (!skip) {
-            $("#vantagens2").append("<div class = \"border rounded p-1\">" + vantagemTotal[i] + " </div>");
+            $("#vantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+vantagemTotal[i]+".png' >" + vantagemTotal[i] + " </div>");
         }
 
     }
@@ -198,9 +211,9 @@ function defend() {
             if (desvantagemTotal[i] == desvantagemTotal[j] && i != j) {
                 desvantagemTotal.splice(j, 1);
                if($("#type1").val()!=$("#type2").val()){
-                    $("#desvantagens2").append("<div class = \"border rounded p-1\">" + desvantagemTotal[i] + "2x </div>");
+                    $("#desvantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+desvantagemTotal[i]+".png' >" + desvantagemTotal[i] + " 2x </div>");
                 }else{
-                    $("#desvantagens2").append("<div class = \"border rounded p-1\">" + desvantagemTotal[i] + " </div>");
+                    $("#desvantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+desvantagemTotal[i]+".png' >" + desvantagemTotal[i] + " </div>");
                 }
                 skip = true;
             }
@@ -212,7 +225,7 @@ function defend() {
         }
 
         if (!skip) {
-            $("#desvantagens2").append("<div class = \"border rounded p-1\">" + desvantagemTotal[i] + " </div>");
+            $("#desvantagens2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+desvantagemTotal[i]+".png' >" + desvantagemTotal[i] + " </div>");
         }
 
     }
@@ -227,7 +240,7 @@ function defend() {
     $("#imunidade2").html("");
     for (let i = 0; i < imunidadeTotal.length; i++) {
 
-        $("#imunidade2").append("<div class = \"border rounded p-1\">" + imunidadeTotal[i] + " </div>");
+        $("#imunidade2").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+imunidadeTotal[i]+".png' >" + imunidadeTotal[i] + " </div>");
 
     }
 
@@ -257,20 +270,20 @@ function attack() {
             vantagemTotal.splice(index, 1);
         }
     }
-    $("#vantagens").html("<div class = \"border rounded p-1\">" + vantagemTotal[0] + " </div>");
+    $("#vantagens").html("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+vantagemTotal[0]+".png' >" + vantagemTotal[0] + " </div>");
     for (let i = 1; i < vantagemTotal.length; i++) {
 
-        $("#vantagens").append("<div class = \"border rounded p-1\">" + vantagemTotal[i] + " </div>");
+        $("#vantagens").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+vantagemTotal[i]+".png' >" + vantagemTotal[i] + " </div>");
 
     }
 
     //imprimir as desvantagens
     const desvantagemTotal = [...new Set([...desvantagem, ...desvantagem2])];
 
-    $("#desvantagens").html("<div class = \"border rounded p-1\">" + desvantagemTotal[0] + " </div>");
+    $("#desvantagens").html("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+desvantagemTotal[0]+".png' >" + desvantagemTotal[0] + " </div>");
     for (let i = 1; i < desvantagemTotal.length; i++) {
 
-        $("#desvantagens").append("<div class = \"border rounded p-1\">" + desvantagemTotal[i] + " </div>");
+        $("#desvantagens").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+desvantagemTotal[i]+".png' >" + desvantagemTotal[i] + " </div>");
 
     }
 
@@ -282,10 +295,10 @@ function attack() {
             imunidadeTotal.splice(index, 1);
         }
     }
-    $("#imunidade").html("<div class = \"border rounded p-1\">" + imunidadeTotal[0] + " </div>");
+    $("#imunidade").html("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+imunidadeTotal[0]+".png' >" + imunidadeTotal[0] + " </div>");
     for (let i = 1; i < imunidadeTotal.length; i++) {
 
-        $("#imunidade").append("<div class = \"border rounded p-1\">" + imunidadeTotal[i] + " </div>");
+        $("#imunidade").append("<div class = \"border rounded p-1\"><img class='type-format' src='./assets/IMG/"+imunidadeTotal[i]+".png' >" + imunidadeTotal[i] + " </div>");
 
     }
 }

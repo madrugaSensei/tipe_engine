@@ -9,3 +9,22 @@
     width: 20rem;
 
 }
+
+.poke-format{
+
+    width: 5rem;
+
+}
+
+.header{
+
+    height: 30rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0,0,0,0.5)), url(../IMG/image.png);
+    background-size: cover;
+}
+
+.footer{
+
+    height: 25rem;
+
+}

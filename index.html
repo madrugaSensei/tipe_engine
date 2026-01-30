@@ -15,283 +15,299 @@
 
     <body class>
 
-        <header>
+        <header class="header d-flex justify-content-center align-items-center">
+
+            <div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="./assets/IMG/gardevoir.png"
+                        alt="imagem de gardevoir"
+                        class="poke-format">
+                    <img src="./assets/IMG/pokemon.png" alt="POKETYPES">
+                    <img src="./assets/IMG/umbreon.png"
+                        alt="imagem de umbreon"
+                        class="poke-format">
+                </div>
+
+                <div class="m-3 d-flex justify-content-evenly">
+                    <div class="dropdown m-2">
+                        <h3 class="text-center">Tipo 1</h3>
+                        <button class="btn btn-secondary dropdown-toggle size"
+                            type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            id="button1">
+                            <div value="normal"
+                                class="normal">
+                                <img src="./assets/IMG/normal.png"
+                                    alt="icone do tipo normal"
+                                    class="type-format">
+                                NORMAL
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item type1" id="normal"><div
+                                        value="normal"
+                                        class="normal">
+                                        <img src="./assets/IMG/normal.png"
+                                            alt="icone do tipo normal"
+                                            class="type-format">
+                                        NORMAL
+                                    </div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="lutador">
+                                        <img src="./assets/IMG/lutador.png"
+                                            alt="icone do tipo lutador"
+                                            class="type-format">
+                                        LUTADOR
+                                    </div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="voador">
+                                        <img src="./assets/IMG/voador.png"
+                                            alt="icone do tipo voador"
+                                            class="type-format">
+                                        VOADOR</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="venenoso">
+                                        <img src="./assets/IMG/venenoso.png"
+                                            alt="icone do tipo venenoso"
+                                            class="type-format">
+                                        VENENOSO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="terrestre">
+                                        <img src="./assets/IMG/terrestre.png"
+                                            alt="icone do tipo terrestre"
+                                            class="type-format">
+                                        TERRESTRE</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="pedra">
+                                        <img src="./assets/IMG/pedra.png"
+                                            alt="icone do tipo pedra"
+                                            class="type-format">
+                                        PEDRA</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="inseto">
+                                        <img src="./assets/IMG/inseto.png"
+                                            alt="icone do tipo inseto"
+                                            class="type-format">
+                                        INSETO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="fantasma">
+                                        <img src="./assets/IMG/fantasma.png"
+                                            alt="icone do tipo fantasma"
+                                            class="type-format">
+                                        FANTASMA</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="aco">
+                                        <img src="./assets/IMG/aco.png"
+                                            alt="icone do tipo aço"
+                                            class="type-format">
+                                        AÇO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="fogo">
+                                        <img src="./assets/IMG/fogo.png"
+                                            alt="icone do tipo fogo"
+                                            class="type-format">
+                                        FOGO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="agua">
+                                        <img src="./assets/IMG/agua.png"
+                                            alt="icone do tipo agua"
+                                            class="type-format">
+                                        ÁGUA</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="planta">
+                                        <img src="./assets/IMG/planta.png"
+                                            alt="icone do tipo planta"
+                                            class="type-format">
+                                        PLANTA</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="eletrico">
+                                        <img src="./assets/IMG/eletrico.png"
+                                            alt="icone do tipo eletrico"
+                                            class="type-format">
+                                        ELÉTRICO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="psiquico">
+                                        <img src="./assets/IMG/psiquico.png"
+                                            alt="icone do tipo psiquico"
+                                            class="type-format">
+                                        PSÍQUICO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="gelo">
+                                        <img src="./assets/IMG/gelo.png"
+                                            alt="icone do tipo gelo"
+                                            class="type-format">
+                                        GELO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="dragao">
+                                        <img src="./assets/IMG/dragao.png"
+                                            alt="icone do tipo dragao"
+                                            class="type-format">
+                                        DRAGÃO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="sombrio">
+                                        <img src="./assets/IMG/sombrio.png"
+                                            alt="icone do tipo sombrio"
+                                            class="type-format">
+                                        SOMBRIO</div></a></li>
+                            <li><a class="dropdown-item type1" href="#"><div
+                                        value="fada">
+                                        <img src="./assets/IMG/fada.png"
+                                            alt="icone do tipo fada"
+                                            class="type-format">
+                                        FADA</div></a></li>
+
+                        </ul>
+                        <input type="hidden" name="type1" id="type1"
+                            value="normal">
+                    </div>
+
+                    <div class="dropdown m-2">
+                        <h3 class="text-center">Tipo 2</h3>
+                        <button class="btn btn-secondary dropdown-toggle size"
+                            type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            id="button2">
+                            <div value="normal"
+                                class="normal">
+                                <img src="./assets/IMG/normal.png"
+                                    alt="icone do tipo normal"
+                                    class="type-format">
+                                NORMAL
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item type2" id="normal"><div
+                                        class="normal">
+                                        <img src="./assets/IMG/normal.png"
+                                            alt="icone do tipo normal"
+                                            class="type-format">
+                                        NORMAL
+                                    </div></a></li>
+                            <li><a class="dropdown-item type2" id="lutador"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/lutador.png"
+                                            alt="icone do tipo lutador"
+                                            class="type-format">
+                                        LUTADOR
+                                    </div></a></li>
+                            <li><a class="dropdown-item type2" id="voador"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/voador.png"
+                                            alt="icone do tipo voador"
+                                            class="type-format">
+                                        VOADOR</div></a></li>
+                            <li><a class="dropdown-item type2" id="venenoso"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/venenoso.png"
+                                            alt="icone do tipo venenoso"
+                                            class="type-format">
+                                        VENENOSO</div></a></li>
+                            <li><a class="dropdown-item type2" id="terrestre"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/terrestre.png"
+                                            alt="icone do tipo terrestre"
+                                            class="type-format">
+                                        TERRESTRE</div></a></li>
+                            <li><a class="dropdown-item type2" id="pedra"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/pedra.png"
+                                            alt="icone do tipo pedra"
+                                            class="type-format">
+                                        PEDRA</div></a></li>
+                            <li><a class="dropdown-item type2" id="inseto"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/inseto.png"
+                                            alt="icone do tipo inseto"
+                                            class="type-format">
+                                        INSETO</div></a></li>
+                            <li><a class="dropdown-item type2" id="fantasma"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/fantasma.png"
+                                            alt="icone do tipo fantasma"
+                                            class="type-format">
+                                        FANTASMA</div></a></li>
+                            <li><a class="dropdown-item type2" id="aco"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/aco.png"
+                                            alt="icone do tipo aço"
+                                            class="type-format">
+                                        AÇO</div></a></li>
+                            <li><a class="dropdown-item type2" id="fogo"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/fogo.png"
+                                            alt="icone do tipo fogo"
+                                            class="type-format">
+                                        FOGO</div></a></li>
+                            <li><a class="dropdown-item type2" id="agua"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/agua.png"
+                                            alt="icone do tipo agua"
+                                            class="type-format">
+                                        ÁGUA</div></a></li>
+                            <li><a class="dropdown-item type2" id="planta"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/planta.png"
+                                            alt="icone do tipo planta"
+                                            class="type-format">
+                                        PLANTA</div></a></li>
+                            <li><a class="dropdown-item type2" id="eletrico"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/eletrico.png"
+                                            alt="icone do tipo eletrico"
+                                            class="type-format">
+                                        ELÉTRICO</div></a></li>
+                            <li><a class="dropdown-item type2" id="psiquico"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/psiquico.png"
+                                            alt="icone do tipo psiquico"
+                                            class="type-format">
+                                        PSÍQUICO</div></a></li>
+                            <li><a class="dropdown-item type2" id="gelo"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/gelo.png"
+                                            alt="icone do tipo gelo"
+                                            class="type-format">
+                                        GELO</div></a></li>
+                            <li><a class="dropdown-item type2" id="dragao"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/dragao.png"
+                                            alt="icone do tipo dragao"
+                                            class="type-format">
+                                        DRAGÃO</div></a></li>
+                            <li><a class="dropdown-item type2" id="sombrio"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/sombrio.png"
+                                            alt="icone do tipo sombrio"
+                                            class="type-format">
+                                        SOMBRIO</div></a></li>
+                            <li><a class="dropdown-item type2" id="fada"
+                                    href="#"><div>
+                                        <img src="./assets/IMG/fada.png"
+                                            alt="icone do tipo fada"
+                                            class="type-format">
+                                        FADA</div></a></li>
+
+                        </ul>
+                        <input type="hidden" name="type2" id="type2"
+                            value="normal">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <a id="input" class="btn btn-danger text-center">Listar
+                        vantagens e
+                        desvantagens</a>
+                </div>
+            </div>
 
         </header>
 
-        <section>
-
-            <div class="m-3 d-flex justify-content-evenly">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle size"
-                        type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"
-                        id="button1">
-                        <div value="normal"
-                            class="normal">
-                            <img src="./assets/IMG/normal.png"
-                                alt="icone do tipo normal"
-                                class="type-format">
-                            NORMAL
-                        </div>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item type1" id="normal"><div
-                                    value="normal"
-                                    class="normal">
-                                    <img src="./assets/IMG/normal.png"
-                                        alt="icone do tipo normal"
-                                        class="type-format">
-                                    NORMAL
-                                </div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="lutador">
-                                    <img src="./assets/IMG/lutador.png"
-                                        alt="icone do tipo lutador"
-                                        class="type-format">
-                                    LUTADOR
-                                </div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="voador">
-                                    <img src="./assets/IMG/voador.png"
-                                        alt="icone do tipo voador"
-                                        class="type-format">
-                                    VOADOR</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="venenoso">
-                                    <img src="./assets/IMG/venenoso.png"
-                                        alt="icone do tipo venenoso"
-                                        class="type-format">
-                                    VENENOSO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="terrestre">
-                                    <img src="./assets/IMG/terrestre.png"
-                                        alt="icone do tipo terrestre"
-                                        class="type-format">
-                                    TERRESTRE</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="pedra">
-                                    <img src="./assets/IMG/pedra.png"
-                                        alt="icone do tipo pedra"
-                                        class="type-format">
-                                    PEDRA</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="inseto">
-                                    <img src="./assets/IMG/inseto.png"
-                                        alt="icone do tipo inseto"
-                                        class="type-format">
-                                    INSETO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="fantasma">
-                                    <img src="./assets/IMG/fantasma.png"
-                                        alt="icone do tipo fantasma"
-                                        class="type-format">
-                                    FANTASMA</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="aco">
-                                    <img src="./assets/IMG/aco.png"
-                                        alt="icone do tipo aço"
-                                        class="type-format">
-                                    AÇO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="fogo">
-                                    <img src="./assets/IMG/fogo.png"
-                                        alt="icone do tipo fogo"
-                                        class="type-format">
-                                    FOGO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="agua">
-                                    <img src="./assets/IMG/agua.png"
-                                        alt="icone do tipo agua"
-                                        class="type-format">
-                                    ÁGUA</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="planta">
-                                    <img src="./assets/IMG/planta.png"
-                                        alt="icone do tipo planta"
-                                        class="type-format">
-                                    PLANTA</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="eletrico">
-                                    <img src="./assets/IMG/eletrico.png"
-                                        alt="icone do tipo eletrico"
-                                        class="type-format">
-                                    ELÉTRICO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="psiquico">
-                                    <img src="./assets/IMG/psiquico.png"
-                                        alt="icone do tipo psiquico"
-                                        class="type-format">
-                                    PSÍQUICO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="gelo">
-                                    <img src="./assets/IMG/gelo.png"
-                                        alt="icone do tipo gelo"
-                                        class="type-format">
-                                    GELO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="dragao">
-                                    <img src="./assets/IMG/dragao.png"
-                                        alt="icone do tipo dragao"
-                                        class="type-format">
-                                    DRAGÃO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="sombrio">
-                                    <img src="./assets/IMG/sombrio.png"
-                                        alt="icone do tipo sombrio"
-                                        class="type-format">
-                                    SOMBRIO</div></a></li>
-                        <li><a class="dropdown-item type1" href="#"><div
-                                    value="fada">
-                                    <img src="./assets/IMG/fada.png"
-                                        alt="icone do tipo fada"
-                                        class="type-format">
-                                    FADA</div></a></li>
-
-                    </ul>
-                    <input type="hidden" name="type1" id="type1" value="normal">
-                </div>
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle size"
-                        type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"
-                        id="button2">
-                        <div value="normal"
-                            class="normal">
-                            <img src="./assets/IMG/normal.png"
-                                alt="icone do tipo normal"
-                                class="type-format">
-                            NORMAL
-                        </div>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item type2" id="normal"><div
-                                    class="normal">
-                                    <img src="./assets/IMG/normal.png"
-                                        alt="icone do tipo normal"
-                                        class="type-format">
-                                    NORMAL
-                                </div></a></li>
-                        <li><a class="dropdown-item type2" id="lutador"
-                                href="#"><div>
-                                    <img src="./assets/IMG/lutador.png"
-                                        alt="icone do tipo lutador"
-                                        class="type-format">
-                                    LUTADOR
-                                </div></a></li>
-                        <li><a class="dropdown-item type2" id="voador"
-                                href="#"><div>
-                                    <img src="./assets/IMG/voador.png"
-                                        alt="icone do tipo voador"
-                                        class="type-format">
-                                    VOADOR</div></a></li>
-                        <li><a class="dropdown-item type2" id="venenoso"
-                                href="#"><div>
-                                    <img src="./assets/IMG/venenoso.png"
-                                        alt="icone do tipo venenoso"
-                                        class="type-format">
-                                    VENENOSO</div></a></li>
-                        <li><a class="dropdown-item type2" id="terrestre"
-                                href="#"><div>
-                                    <img src="./assets/IMG/terrestre.png"
-                                        alt="icone do tipo terrestre"
-                                        class="type-format">
-                                    TERRESTRE</div></a></li>
-                        <li><a class="dropdown-item type2" id="pedra"
-                                href="#"><div>
-                                    <img src="./assets/IMG/pedra.png"
-                                        alt="icone do tipo pedra"
-                                        class="type-format">
-                                    PEDRA</div></a></li>
-                        <li><a class="dropdown-item type2" id="inseto"
-                                href="#"><div>
-                                    <img src="./assets/IMG/inseto.png"
-                                        alt="icone do tipo inseto"
-                                        class="type-format">
-                                    INSETO</div></a></li>
-                        <li><a class="dropdown-item type2" id="fantasma"
-                                href="#"><div>
-                                    <img src="./assets/IMG/fantasma.png"
-                                        alt="icone do tipo fantasma"
-                                        class="type-format">
-                                    FANTASMA</div></a></li>
-                        <li><a class="dropdown-item type2" id="aco"
-                                href="#"><div>
-                                    <img src="./assets/IMG/aco.png"
-                                        alt="icone do tipo aço"
-                                        class="type-format">
-                                    AÇO</div></a></li>
-                        <li><a class="dropdown-item type2" id="fogo"
-                                href="#"><div>
-                                    <img src="./assets/IMG/fogo.png"
-                                        alt="icone do tipo fogo"
-                                        class="type-format">
-                                    FOGO</div></a></li>
-                        <li><a class="dropdown-item type2" id="agua"
-                                href="#"><div>
-                                    <img src="./assets/IMG/agua.png"
-                                        alt="icone do tipo agua"
-                                        class="type-format">
-                                    ÁGUA</div></a></li>
-                        <li><a class="dropdown-item type2" id="planta"
-                                href="#"><div>
-                                    <img src="./assets/IMG/planta.png"
-                                        alt="icone do tipo planta"
-                                        class="type-format">
-                                    PLANTA</div></a></li>
-                        <li><a class="dropdown-item type2" id="eletrico"
-                                href="#"><div>
-                                    <img src="./assets/IMG/eletrico.png"
-                                        alt="icone do tipo eletrico"
-                                        class="type-format">
-                                    ELÉTRICO</div></a></li>
-                        <li><a class="dropdown-item type2" id="psiquico"
-                                href="#"><div>
-                                    <img src="./assets/IMG/psiquico.png"
-                                        alt="icone do tipo psiquico"
-                                        class="type-format">
-                                    PSÍQUICO</div></a></li>
-                        <li><a class="dropdown-item type2" id="gelo"
-                                href="#"><div>
-                                    <img src="./assets/IMG/gelo.png"
-                                        alt="icone do tipo gelo"
-                                        class="type-format">
-                                    GELO</div></a></li>
-                        <li><a class="dropdown-item type2" id="dragao"
-                                href="#"><div>
-                                    <img src="./assets/IMG/dragao.png"
-                                        alt="icone do tipo dragao"
-                                        class="type-format">
-                                    DRAGÃO</div></a></li>
-                        <li><a class="dropdown-item type2" id="sombrio"
-                                href="#"><div>
-                                    <img src="./assets/IMG/sombrio.png"
-                                        alt="icone do tipo sombrio"
-                                        class="type-format">
-                                    SOMBRIO</div></a></li>
-                        <li><a class="dropdown-item type2" id="fada"
-                                href="#"><div>
-                                    <img src="./assets/IMG/fada.png"
-                                        alt="icone do tipo fada"
-                                        class="type-format">
-                                    FADA</div></a></li>
-
-                    </ul>
-                    <input type="hidden" name="type2" id="type2" value="normal">
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <a id="input" class="btn btn-danger text-center">Listar
-                    vantagens e
-                    desvantagens</a>
-            </div>
+        
 
             <script src="./assets/JS/types.js"></script>
 
-            <div class="border m-4 text-center">
-                <h3>Quando defendendo</h3>
+            <div id="def" class="border border-dark rounded p-3 m-4 text-center">
+                <h3 class="text-danger">Quando defendendo</h3>
                 <div class="d-flex justify-content-center">
                     <div class="m-3 border p-3">
                         <h4>Resitência:</h4>
@@ -312,8 +328,8 @@
                 </div>
             </div>
 
-            <div class="border m-4 text-center">
-                <h3>Quando atacando</h3>
+            <div id="atk" class="border border-dark rounded p-3 m-4 text-center">
+                <h3 class="text-primary">Quando atacando</h3>
                 <div class="d-flex justify-content-center">
                     <div class="m-3 border p-3">
                         <h4>Vantagens:</h4>
@@ -338,7 +354,14 @@
 
         </section>
 
-        <footer>
+        <footer class="bg-danger footer d-flex align-items-center justify-content-center">
+
+            <div>
+                <p class="text-center text-white p-2"> 2026 POKETYPES. Criado por madrugaSensei.</p>
+            <p class="text-center text-white p-2"> Email: matmathias13@gmail.com</p>
+            <p class="text-center text-white p-2">Repositório github: <a href="https://github.com/madrugaSensei/tipe_engine">https://github.com/madrugaSensei/tipe_engine</a></p>
+
+            </div>
 
         </footer>
 
